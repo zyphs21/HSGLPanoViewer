@@ -16,9 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		162F4DA80A572B4E66EAFE0D /* Pods-HSGLPanoViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSGLPanoViewer.release.xcconfig"; path = "Target Support Files/Pods-HSGLPanoViewer/Pods-HSGLPanoViewer.release.xcconfig"; sourceTree = "<group>"; };
-		5C06E6D8B289B31C3C5B790B /* Pods_HSGLPanoViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSGLPanoViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A88D52716A1A920FCF7C5374 /* Pods-HSGLPanoViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSGLPanoViewer.debug.xcconfig"; path = "Target Support Files/Pods-HSGLPanoViewer/Pods-HSGLPanoViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		C026225B250C72190035DF13 /* HSGLPanoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSGLPanoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C026225E250C72190035DF13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0262260250C72190035DF13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,29 +37,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24333E183515CFED134D7BC1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5C06E6D8B289B31C3C5B790B /* Pods_HSGLPanoViewer.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9666A3976A31530D8AB72AF7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A88D52716A1A920FCF7C5374 /* Pods-HSGLPanoViewer.debug.xcconfig */,
-				162F4DA80A572B4E66EAFE0D /* Pods-HSGLPanoViewer.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		C0262252250C72190035DF13 = {
 			isa = PBXGroup;
 			children = (
 				C026225D250C72190035DF13 /* HSGLPanoViewer */,
 				C026225C250C72190035DF13 /* Products */,
-				9666A3976A31530D8AB72AF7 /* Pods */,
 				24333E183515CFED134D7BC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -320,7 +299,6 @@
 		};
 		C0262270250C721D0035DF13 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A88D52716A1A920FCF7C5374 /* Pods-HSGLPanoViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
