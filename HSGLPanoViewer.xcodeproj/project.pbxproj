@@ -13,6 +13,12 @@
 		C0262266250C72190035DF13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0262264250C72190035DF13 /* Main.storyboard */; };
 		C0262268250C721D0035DF13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0262267250C721D0035DF13 /* Assets.xcassets */; };
 		C026226B250C721D0035DF13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0262269250C721D0035DF13 /* LaunchScreen.storyboard */; };
+		C0262277250C7DCB0035DF13 /* GLKitPanoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0262276250C7DCB0035DF13 /* GLKitPanoViewController.swift */; };
+		C0262279250C7E260035DF13 /* PanoViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0262278250C7E260035DF13 /* PanoViewType.swift */; };
+		C026227B250C7E5A0035DF13 /* ViewTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026227A250C7E5A0035DF13 /* ViewTransform.swift */; };
+		C026227D250C7E960035DF13 /* Array+MemorySize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026227C250C7E960035DF13 /* Array+MemorySize.swift */; };
+		C0262286250C87F20035DF13 /* pano-2048-1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0262284250C87F20035DF13 /* pano-2048-1024.jpg */; };
+		C0262287250C87F20035DF13 /* pano-4096-2048.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0262285250C87F20035DF13 /* pano-4096-2048.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		C0262267250C721D0035DF13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C026226A250C721D0035DF13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C026226C250C721D0035DF13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0262276250C7DCB0035DF13 /* GLKitPanoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLKitPanoViewController.swift; sourceTree = "<group>"; };
+		C0262278250C7E260035DF13 /* PanoViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoViewType.swift; sourceTree = "<group>"; };
+		C026227A250C7E5A0035DF13 /* ViewTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTransform.swift; sourceTree = "<group>"; };
+		C026227C250C7E960035DF13 /* Array+MemorySize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+MemorySize.swift"; sourceTree = "<group>"; };
+		C0262284250C87F20035DF13 /* pano-2048-1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pano-2048-1024.jpg"; sourceTree = "<group>"; };
+		C0262285250C87F20035DF13 /* pano-4096-2048.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pano-4096-2048.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +70,14 @@
 			children = (
 				C0262272250C753B0035DF13 /* GLKitPano */,
 				C0262273250C75620035DF13 /* GLSLPano */,
+				C026227E250C801D0035DF13 /* Resources */,
 				C026225E250C72190035DF13 /* AppDelegate.swift */,
 				C0262260250C72190035DF13 /* SceneDelegate.swift */,
 				C0262262250C72190035DF13 /* ViewController.swift */,
-				C0262264250C72190035DF13 /* Main.storyboard */,
-				C0262267250C721D0035DF13 /* Assets.xcassets */,
-				C0262269250C721D0035DF13 /* LaunchScreen.storyboard */,
 				C026226C250C721D0035DF13 /* Info.plist */,
+				C0262278250C7E260035DF13 /* PanoViewType.swift */,
+				C026227A250C7E5A0035DF13 /* ViewTransform.swift */,
+				C026227C250C7E960035DF13 /* Array+MemorySize.swift */,
 			);
 			path = HSGLPanoViewer;
 			sourceTree = "<group>";
@@ -72,6 +85,7 @@
 		C0262272250C753B0035DF13 /* GLKitPano */ = {
 			isa = PBXGroup;
 			children = (
+				C0262276250C7DCB0035DF13 /* GLKitPanoViewController.swift */,
 			);
 			path = GLKitPano;
 			sourceTree = "<group>";
@@ -81,6 +95,26 @@
 			children = (
 			);
 			path = GLSLPano;
+			sourceTree = "<group>";
+		};
+		C026227E250C801D0035DF13 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C026227F250C804D0035DF13 /* PanoImages */,
+				C0262264250C72190035DF13 /* Main.storyboard */,
+				C0262269250C721D0035DF13 /* LaunchScreen.storyboard */,
+				C0262267250C721D0035DF13 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C026227F250C804D0035DF13 /* PanoImages */ = {
+			isa = PBXGroup;
+			children = (
+				C0262284250C87F20035DF13 /* pano-2048-1024.jpg */,
+				C0262285250C87F20035DF13 /* pano-4096-2048.jpg */,
+			);
+			path = PanoImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +175,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0262287250C87F20035DF13 /* pano-4096-2048.jpg in Resources */,
 				C026226B250C721D0035DF13 /* LaunchScreen.storyboard in Resources */,
 				C0262268250C721D0035DF13 /* Assets.xcassets in Resources */,
+				C0262286250C87F20035DF13 /* pano-2048-1024.jpg in Resources */,
 				C0262266250C72190035DF13 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0262277250C7DCB0035DF13 /* GLKitPanoViewController.swift in Sources */,
 				C0262263250C72190035DF13 /* ViewController.swift in Sources */,
+				C0262279250C7E260035DF13 /* PanoViewType.swift in Sources */,
+				C026227B250C7E5A0035DF13 /* ViewTransform.swift in Sources */,
 				C026225F250C72190035DF13 /* AppDelegate.swift in Sources */,
+				C026227D250C7E960035DF13 /* Array+MemorySize.swift in Sources */,
 				C0262261250C72190035DF13 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

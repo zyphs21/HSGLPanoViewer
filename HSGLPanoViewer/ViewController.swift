@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GLKit
 
 class ViewController: UIViewController {
 
@@ -16,7 +17,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showGLKitPano(_ sender: Any) {
-        
+        let vc = GLKitPanoViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func showGLSLPano(_ sender: Any) {
