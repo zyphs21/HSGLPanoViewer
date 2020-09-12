@@ -202,5 +202,4 @@ private func updateMVPMatrix() {
 
 - [OpenGL-Tutorial-矩阵](http://www.opengl-tutorial.org/cn/beginners-tutorials/tutorial-3-matrices/)
 - [How to Create a 360 Video Player](https://medium.com/@hanton.yang/how-to-create-a-360-video-player-with-opengl-es-3-0-and-glkit-360-3f29a9cfac88)
-
-- [OpenGLES3-Book
+- [OpenGLES3-Book](https://github.com/danginsburg/opengles3-book)
