@@ -19,6 +19,11 @@
 		C026227D250C7E960035DF13 /* Array+MemorySize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026227C250C7E960035DF13 /* Array+MemorySize.swift */; };
 		C0262286250C87F20035DF13 /* pano-2048-1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0262284250C87F20035DF13 /* pano-2048-1024.jpg */; };
 		C0262287250C87F20035DF13 /* pano-4096-2048.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0262285250C87F20035DF13 /* pano-4096-2048.jpg */; };
+		C0262289250CB8980035DF13 /* GLSLPanoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0262288250CB8980035DF13 /* GLSLPanoViewController.swift */; };
+		C026228B250CB8CB0035DF13 /* GLSLPanoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026228A250CB8CB0035DF13 /* GLSLPanoView.swift */; };
+		C026228D250CB90C0035DF13 /* GLViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026228C250CB90C0035DF13 /* GLViewable.swift */; };
+		C0262290250CB9840035DF13 /* Pano.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C026228F250CB9830035DF13 /* Pano.fsh */; };
+		C0262292250CB9890035DF13 /* Pano.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C0262291250CB9890035DF13 /* Pano.vsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		C026227C250C7E960035DF13 /* Array+MemorySize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+MemorySize.swift"; sourceTree = "<group>"; };
 		C0262284250C87F20035DF13 /* pano-2048-1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pano-2048-1024.jpg"; sourceTree = "<group>"; };
 		C0262285250C87F20035DF13 /* pano-4096-2048.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pano-4096-2048.jpg"; sourceTree = "<group>"; };
+		C0262288250CB8980035DF13 /* GLSLPanoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLSLPanoViewController.swift; sourceTree = "<group>"; };
+		C026228A250CB8CB0035DF13 /* GLSLPanoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLSLPanoView.swift; sourceTree = "<group>"; };
+		C026228C250CB90C0035DF13 /* GLViewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLViewable.swift; sourceTree = "<group>"; };
+		C026228F250CB9830035DF13 /* Pano.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Pano.fsh; sourceTree = "<group>"; };
+		C0262291250CB9890035DF13 /* Pano.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Pano.vsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +103,10 @@
 		C0262273250C75620035DF13 /* GLSLPano */ = {
 			isa = PBXGroup;
 			children = (
+				C026228E250CB9770035DF13 /* Shader */,
+				C0262288250CB8980035DF13 /* GLSLPanoViewController.swift */,
+				C026228A250CB8CB0035DF13 /* GLSLPanoView.swift */,
+				C026228C250CB90C0035DF13 /* GLViewable.swift */,
 			);
 			path = GLSLPano;
 			sourceTree = "<group>";
@@ -115,6 +129,15 @@
 				C0262285250C87F20035DF13 /* pano-4096-2048.jpg */,
 			);
 			path = PanoImages;
+			sourceTree = "<group>";
+		};
+		C026228E250CB9770035DF13 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				C0262291250CB9890035DF13 /* Pano.vsh */,
+				C026228F250CB9830035DF13 /* Pano.fsh */,
+			);
+			path = Shader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +201,9 @@
 				C0262287250C87F20035DF13 /* pano-4096-2048.jpg in Resources */,
 				C026226B250C721D0035DF13 /* LaunchScreen.storyboard in Resources */,
 				C0262268250C721D0035DF13 /* Assets.xcassets in Resources */,
+				C0262292250CB9890035DF13 /* Pano.vsh in Resources */,
 				C0262286250C87F20035DF13 /* pano-2048-1024.jpg in Resources */,
+				C0262290250CB9840035DF13 /* Pano.fsh in Resources */,
 				C0262266250C72190035DF13 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,10 +218,13 @@
 				C0262277250C7DCB0035DF13 /* GLKitPanoViewController.swift in Sources */,
 				C0262263250C72190035DF13 /* ViewController.swift in Sources */,
 				C0262279250C7E260035DF13 /* PanoViewType.swift in Sources */,
+				C026228B250CB8CB0035DF13 /* GLSLPanoView.swift in Sources */,
 				C026227B250C7E5A0035DF13 /* ViewTransform.swift in Sources */,
 				C026225F250C72190035DF13 /* AppDelegate.swift in Sources */,
 				C026227D250C7E960035DF13 /* Array+MemorySize.swift in Sources */,
+				C0262289250CB8980035DF13 /* GLSLPanoViewController.swift in Sources */,
 				C0262261250C72190035DF13 /* SceneDelegate.swift in Sources */,
+				C026228D250CB90C0035DF13 /* GLViewable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

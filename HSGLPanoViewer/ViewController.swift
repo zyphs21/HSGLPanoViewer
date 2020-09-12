@@ -22,7 +22,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showGLSLPano(_ sender: Any) {
-        
+        let vc = GLSLPanoViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }
